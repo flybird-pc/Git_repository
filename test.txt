@@ -1,0 +1,33 @@
+git创建版本库基础（首先启动git bash：配置：git config --global user.name "用户名"-->git config --global user.email '邮箱'
+1、进入指定文件夹：cd e:
+2、查看当前文件夹下所有内容：ls -i 
+3、创建git版本库：mkdir 版本库名-->cd 版本库名-->git init
+4、将代码工程复制到  版本库名文件夹中
+5、cd 版本库名-->添加到暂存区：git add . 
+6、查看状态：git status
+7、提交修改：git commit - m "注释"
+8、查看状态：git status
+9、提交到github仓库：git push -u origin 分支名
+
+git基础版本管理：
+1、查看提交日志：git log
+2、查看文件修改内容：git diff 文件名
+3、回退版本：回退1个版本：git reset --hard HEAD^，回退2个版本git reset --hard HEAD^^，
+回100个版本：git reset --hard HEAD~100，
+4、恢复到指定版本：查看版本号：git reflog，回退到指定版本：git reset --hard 版本号
+
+#5、丢弃工作区的修改：git checkout --文件名
+
+git管理分支
+1、远程github网站创建一个名称：test的版本库并复制https复制
+2、进入本地工程文件夹下，git clone "https://github.com/路径",本地文件夹下会生成test文件夹
+3、创建dev分支：git checkout -b dev
+4、查看当前分支：git branch
+5、创建并切换到该新建分支：git checkout -b 分支名
+6、切换到dev分支：git checkout dev
+7、合并分支到当前分支：git merge 分支名
+8、删除分支：git branch -d 分支名
+
+
+
+
